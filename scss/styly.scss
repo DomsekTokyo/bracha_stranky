@@ -9,7 +9,7 @@ body{
 //--------------pro navigaci i respo
 // nzivita i styly-----------------//
 .obrazekuvod{
-  height: 100vh;
+  height: 920px;
   background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("../zkouska1.jpg");
 
   background-size: cover;
@@ -70,8 +70,37 @@ body{
 .logo{
   @include logostyl;
 }
+//----------úvod--------------//
+.Uvod-sekce{
+  @include zarovnani;
+  position: relative;
+  p,h1,a{
+    color:white;
+    margin: 10px;
+  }
+  p, a{
+    font-size: 38px;
 
+  }
+  h1{
+    font-size: 56px;
+  }
+  //tlačítka
+  .linky{
+    @include buttons;
+  }
+  //čára pomlčka
+  .myname::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 4px;
+    background-color: $main;
+    margin-right: 10px;
+    vertical-align: middle;
 
+  }
+}
 
 
 

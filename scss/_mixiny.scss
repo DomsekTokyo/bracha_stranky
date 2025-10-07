@@ -1,12 +1,13 @@
 $nav : white;
 $main: #ff5900;
+$font: Arial, sans-serif;
 //--------------pro navigaci i responzivita i styly-----------------//
 @mixin styl{
 
   width: 100%;
   position:fixed;
   display:flex;
-  font-family: Arial, sans-serif;
+  font-family: $font;
 
 
 
@@ -93,5 +94,48 @@ $main: #ff5900;
   position: fixed;
   left: 30px;
   top: -11px;
+
+}
+//----------úvod zarovnání--------------//
+@mixin zarovnani{
+  width: 40%;
+  position: relative;
+  left: 10%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 700px;
+  font-family: $font;
+
+
+}
+//-------tlačítka--------//
+@mixin buttons{
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  a{
+    text-decoration: none;
+    background-color: $main;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+  .empty{
+    background-color: transparent;
+    border: 2px solid $main;
+  }
+  .empty:hover{
+    background-color: $main;
+    transition: 0.5s ease-in-out;
+  }
+  .full:hover{
+    background-color: lighten($main,20%);
+    transition: 0.5s ease-in-out;
+  }
 
 }
