@@ -1,41 +1,46 @@
-$nav : rgba(52, 57, 71, 0.89);
-
-
+$nav : white;
+$main: #ff5900;
+//--------------pro navigaci i responzivita i styly-----------------//
 @mixin styl{
 
   width: 100%;
   position:fixed;
   display:flex;
-  top: 0;
-  left: 0;
-  background-color: #323131;
+  font-family: Arial, sans-serif;
+
+
+
   height: 50px;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  right: 50px;
   ul{
 
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
     margin: 0;
     padding: 0;
 
   }
   li{
 
-    background-color: #ffffff;
-    color: rgba(32, 2, 50, 0.82);
-    border: 1px solid rgba(32, 2, 50, 0.82);
+
+
+
     border-radius: 20px;
-    padding: 0 20px;
+    margin-top:50px;
+    padding: 0 4px;
     width: 100px;
     display:inline;
     text-align: center;
   }
+
   li a{
 
-
+    color: $nav;
     text-decoration: none;
+    font-size: 25px;
   }
 
 }
@@ -65,7 +70,7 @@ $nav : rgba(52, 57, 71, 0.89);
   li{
     margin-top:15px;
     background-color: #ffffff;
-    color: rgba(32, 2, 50, 0.82);
+    color: $nav;
     border: 1px solid rgba(32, 2, 50, 0.82);
     border-radius: 20px;
     padding: 0 20px;
@@ -81,3 +86,12 @@ $nav : rgba(52, 57, 71, 0.89);
 
 }
 
+//----------logo--------------//
+@mixin logostyl{
+  width: 345px;
+  height: 139px;
+  position: fixed;
+  left: 30px;
+  top: -11px;
+
+}
