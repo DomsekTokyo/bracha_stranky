@@ -120,6 +120,34 @@ body{
   0%, 50%, 100% { border-color: white; }
   25%, 75% { border-color: transparent; }
 }
+.barvicka{
+  background-color: $main;
+  color: white;
+  padding: 10px 0;
+  height: 200px;
+}
+.rezervace{
+  @include kontainer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-family: $font;
+  h1{
 
+    margin-bottom: 0;
+  }
 
+  p{
+    margin-top: 0;
+
+    font-size: 20px;
+  }
+  a{
+    position:absolute;
+    right: 15%;
+    @include button;
+  }
+
+}
 

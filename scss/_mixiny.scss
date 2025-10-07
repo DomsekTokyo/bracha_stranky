@@ -1,6 +1,21 @@
 $nav : white;
 $main: #ff5900;
 $font: Arial, sans-serif;
+
+
+
+//-------------container--------------//
+@mixin kontainer{
+
+    display: block;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0 15%;
+    box-sizing: border-box;
+  }
+
+
 //--------------pro navigaci i responzivita i styly-----------------//
 @mixin styl{
 
@@ -100,7 +115,7 @@ $font: Arial, sans-serif;
 @mixin zarovnani{
   width: 40%;
   position: relative;
-  left: 10%;
+  left: 15%;
   top: 10%;
   display: flex;
   flex-direction: column;
@@ -138,5 +153,37 @@ $font: Arial, sans-serif;
     transition: 0.5s ease-in-out;
   }
 
+
+}
+//-------------rezervace pruh------------//
+.rezervace{
+
+  width: 100%;
+  position: absolute;
+
+  color: white;
+  font-family: $font;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 100px;
+  a{
+    float:right;
+  }
+
+}
+//tlačítko
+@mixin button{
+  color: $main;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 30px;
+  &:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+  }
 }
 

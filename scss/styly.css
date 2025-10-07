@@ -1,3 +1,18 @@
+.rezervace {
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.rezervace a {
+  float: right;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -121,7 +136,7 @@ body {
 .Uvod-sekce {
   width: 40%;
   position: relative;
-  left: 10%;
+  left: 15%;
   top: 10%;
   display: flex;
   flex-direction: column;
@@ -199,6 +214,46 @@ body {
   25%, 75% {
     border-color: transparent;
   }
+}
+.barvicka {
+  background-color: #ff5900;
+  color: white;
+  padding: 10px 0;
+  height: 200px;
+}
+
+.rezervace {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.rezervace h1 {
+  margin-bottom: 0;
+}
+.rezervace p {
+  margin-top: 0;
+  font-size: 20px;
+}
+.rezervace a {
+  position: absolute;
+  right: 15%;
+  color: #ff5900;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 30px;
+}
+.rezervace a:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
 }
 
 /*# sourceMappingURL=styly.css.map */
