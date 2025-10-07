@@ -176,4 +176,29 @@ body {
   vertical-align: middle;
 }
 
+.typer {
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  padding-right: 2px;
+  animation: blink 0.7s step-end infinite;
+  vertical-align: middle;
+}
+
+.typermain {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    border-color: white;
+  }
+  25%, 75% {
+    border-color: transparent;
+  }
+}
+
 /*# sourceMappingURL=styly.css.map */
