@@ -219,7 +219,7 @@ body {
   background-color: #ff5900;
   color: white;
   padding: 10px 0;
-  height: 200px;
+  height: 120px;
 }
 
 .rezervace {
@@ -254,6 +254,61 @@ body {
 .rezervace a:hover {
   transform: scale(1.2);
   transition: 0.5s ease-in-out;
+}
+
+.omne {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 600px 1fr;
+}
+.omne .grid1 img {
+  width: 80%;
+  height: 70%;
+  margin-top: 100px;
+}
+.omne .grid2 {
+  margin-top: 90px;
+  font-family: Arial, sans-serif;
+}
+.omne .grid2 h1 {
+  font-size: 55px;
+}
+.omne .grid2 p {
+  font-size: 25px;
+}
+.omne .grid2 h1::after {
+  content: "";
+  width: 300px;
+  background-color: #ff5900;
+  display: block;
+  height: 3px;
+  margin-top: 10px;
+}
+.omne .grid2 .more {
+  color: #ff5900;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 30px;
+}
+.omne .grid2 .more:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+.omne .grid2 .more {
+  background-color: #ff5900;
+  color: white;
+  padding: 10px 30px;
+}
+.omne .grid2 .more:hover {
+  background-color: white;
+  color: #ff5900;
+  border: 2px solid #ff5900;
 }
 
 /*# sourceMappingURL=styly.css.map */
