@@ -1,7 +1,29 @@
 $nav : white;
 $main: #ff5900;
 $font: Arial, sans-serif;
+$obycej: #4a4a4a;
 
+
+//-----------pro nadpisy podtržení-----------//
+@mixin podtrzeni{
+
+  margin: 10px auto 0 auto;
+  content: "";
+  width: 100px;
+  background-color:$main;
+  display: block;
+  height: 3px;
+
+}
+
+@mixin nadpis{
+  display: flex;
+  justify-content: center ;
+  align-items: center ;
+  color:white;
+  font-family: $font;
+
+}
 
 
 //-------------container--------------//
@@ -156,8 +178,7 @@ $font: Arial, sans-serif;
 
 }
 //-------------rezervace pruh------------//
-.rezervace{
-
+@mixin pruh {
   width: 100%;
   position: absolute;
 
@@ -173,6 +194,7 @@ $font: Arial, sans-serif;
   }
 
 }
+
 //tlačítko
 @mixin button{
   color: $main;

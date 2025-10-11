@@ -1,18 +1,3 @@
-.rezervace {
-  width: 100%;
-  position: absolute;
-  color: white;
-  font-family: Arial, sans-serif;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  margin-right: 100px;
-}
-.rezervace a {
-  float: right;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -198,6 +183,7 @@ body {
   border-right: 2px solid white;
   padding-right: 2px;
   animation: blink 0.7s step-end infinite;
+  color: #ff5900 !important;
   vertical-align: middle;
 }
 
@@ -256,6 +242,21 @@ body {
   transition: 0.5s ease-in-out;
 }
 
+.rezervace {
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.rezervace a {
+  float: right;
+}
+
 .omne {
   display: block;
   width: 100%;
@@ -278,7 +279,8 @@ body {
   font-size: 55px;
 }
 .omne .grid2 p {
-  font-size: 25px;
+  font-size: 22px;
+  color: #4a4a4a;
 }
 .omne .grid2 h1::after {
   content: "";
@@ -309,6 +311,68 @@ body {
   background-color: white;
   color: #ff5900;
   border: 2px solid #ff5900;
+}
+
+.kontaktpruh {
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.kontaktpruh a {
+  float: right;
+}
+.kontaktpruh {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.kontaktpruh h1 {
+  margin-bottom: 0;
+}
+.kontaktpruh p {
+  margin-top: 0;
+  font-size: 20px;
+}
+.kontaktpruh a {
+  position: absolute;
+  right: 15%;
+  color: #ff5900;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 30px;
+}
+.kontaktpruh a:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+
+.konec {
+  height: 200px;
+  background-color: #4a4a4a;
+}
+.konec p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.konec a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styly.css.map */

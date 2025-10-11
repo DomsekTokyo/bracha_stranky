@@ -100,7 +100,7 @@ body{
 
   }
 }
-//typer funkce
+//typer funkce -- psaný text
 .typer{
   font-family: $font;
   white-space: nowrap;
@@ -108,6 +108,7 @@ body{
   border-right: 2px solid white;
   padding-right: 2px;
   animation: blink 0.7s step-end infinite;
+  color: $main !important;
 
   vertical-align: middle;
 }
@@ -150,6 +151,10 @@ body{
   }
 
 }
+//---------Rezervace------------//
+.rezervace{
+  @include pruh;
+}
 //-------------sekce o mně------------//
 .omne{
   @include kontainer;
@@ -168,7 +173,8 @@ body{
       font-size: 55px;
     }
     p{
-      font-size: 25px;
+      font-size: 22px;
+      color:$obycej;
     }
     h1::after{
       content: "";
@@ -197,4 +203,51 @@ body{
 
 
 }
+//---------Kontakt------------//
+.kontaktpruh{
+  @include pruh;
+  @include kontainer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-family: $font;
+  h1{
+
+    margin-bottom: 0;
+  }
+
+  p{
+    margin-top: 0;
+
+    font-size: 20px;
+  }
+  a{
+    position:absolute;
+    right: 15%;
+    @include button;
+  }
+}
+//------------Footer------------//
+.konec{
+
+
+  height: 200px;
+
+  background-color: $obycej;
+  p{
+
+    text-align: center;
+
+    font-family: $font;
+    color: white;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+
+  }
+}
+
+
 

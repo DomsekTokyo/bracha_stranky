@@ -1,0 +1,98 @@
+@import "mixiny";
+@mixin ic{
+  transform: translateY(4px);
+  display:inline-block;
+  width: 20px;
+  height: 20px;
+}
+.two, .three, .one{
+  color: black !important;
+
+}
+.navbar{
+  display: flex;
+  align-items: center;
+
+  justify-content: right;
+  background-color: white;
+  width: 100%;
+  right: 0;
+  height: 80px;
+  ul{
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+}
+.kontakt{
+  width: 100%;
+  display: flex;
+  background-color: $main;
+  align-items: center;
+
+  li{
+
+    display:inline;
+    margin-left:20px;
+    font-family: $font;
+    color: white;
+  }
+  .ikony{
+    @include ic;
+  }
+}
+.professional{
+  height: 150px;
+  background-color: $obycej;
+  margin-top:90px;
+  h1{
+    color: white;
+    padding-left:5%;
+    padding-top:1%;
+    font-size: 45px;
+    font-family: $font;
+  }
+  .lichybeznik{
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+
+    background-color: $main;
+    clip-path: polygon(
+                    15% 0,
+                    60% 0,
+                    50% 100%,
+                    15% 100%
+    );
+
+    transform: translateY(-25px);
+    width: 600px;
+    height: 50px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    p{
+      font-size: 17px;
+      display: inline-block;
+      transform: translateY(-2px);
+      margin-right: 200px;
+      font-family: $font;
+      .ikony{
+        @include ic;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+}
+
+
