@@ -19,11 +19,12 @@ body {
   z-index: 1000;
 }
 .navigaceposun {
-  z-index: 10;
+  z-index: 1000;
   right: 0 !important;
 }
 
 .navigacestoji {
+  z-index: 1000;
   width: 100%;
   position: fixed;
   display: flex;
@@ -33,18 +34,19 @@ body {
   justify-content: right;
 }
 .navigacestoji ul {
-  margin-right: 50px;
+  margin-right: 20px;
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 30px;
   padding: 0;
 }
 .navigacestoji li {
+  flex: 0 0 110px;
   border-radius: 20px;
   margin-top: 50px;
   padding: 0 4px;
   width: 100px;
-  display: inline;
+  display: inline-block !important;
   text-align: center;
 }
 .navigacestoji li a {
@@ -68,6 +70,7 @@ body {
 }
 
 .navbar {
+  z-index: 1000;
   width: 100%;
   position: fixed;
   display: flex;
@@ -77,18 +80,19 @@ body {
   justify-content: right;
 }
 .navbar ul {
-  margin-right: 50px;
+  margin-right: 20px;
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 30px;
   padding: 0;
 }
 .navbar li {
+  flex: 0 0 110px;
   border-radius: 20px;
   margin-top: 50px;
   padding: 0 4px;
   width: 100px;
-  display: inline;
+  display: inline-block !important;
   text-align: center;
 }
 .navbar li a {

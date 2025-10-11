@@ -53,24 +53,24 @@ $obycej: #4a4a4a;
   justify-content: right;
 
   ul{
-    margin-right: 50px;
+    margin-right: 20px;
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 30px;
 
     padding: 0;
 
   }
   li{
 
-
+    flex: 0 0 110px;
 
 
     border-radius: 20px;
     margin-top:50px;
     padding: 0 4px;
     width: 100px;
-    display:inline;
+    display:inline-block !important;
     text-align: center;
   }
 
