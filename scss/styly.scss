@@ -7,21 +7,51 @@ body{
 }
 
 //--------------pro navigaci i responzivita i styly-----------------//
-.obrazekuvod{
-  height: 920px;
-  background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("../zkouska1.jpg");
 
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+
+//toto je pro efekt scrollu
+.navigaceposun{
+
+  height: 70px !important;
+  transition: 0.6s ease;
+  background-color: $obycej;
+  ul{
+    margin-bottom: 50px;
+  }
+  .one{
+    display:inline-block;
+  }
+  li a{
+    z-index: 1000;
+  }
+
+  z-index: 10;
+
+  right: 0 !important;
+
+}
+.navigacestoji{
+  @include styl;
+  //úprava textu v navigaci
+  .second{
+    width:240px;
+  }
+  .first a{
+    color: $main;
+  }
+  .one{
+    display:none;
+  }
+  .fourth {
+    background-color: $main;
+    padding: 5px;
+    margin-top: 45px;
+
+
+  }
 }
 
-.cross,
-.hamburger{
-  @include styl_ikona;
-  display:none;
-}
-
+//ostatní
 .navbar{
   @include styl;
   //úprava textu v navigaci
@@ -38,8 +68,22 @@ body{
 
 
   }
-
 }
+.obrazekuvod{
+  height: 920px;
+  background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("../zkouska1.jpg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.cross,
+.hamburger{
+  @include styl_ikona;
+  display:none;
+}
+
 
 
 @media only screen and (max-width: 660px){
@@ -232,22 +276,10 @@ body{
 .konec{
 
 
-  height: 200px;
-
-  background-color: $obycej;
-  p{
-
-    text-align: center;
-
-    font-family: $font;
-    color: white;
-  }
-  a{
-    color: white;
-    text-decoration: none;
-
-  }
+ @include footer;
 }
+
+
 
 
 

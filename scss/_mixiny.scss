@@ -51,13 +51,13 @@ $obycej: #4a4a4a;
   height: 50px;
   align-items: center;
   justify-content: right;
-  right: 50px;
-  ul{
 
+  ul{
+    margin-right: 50px;
     list-style: none;
     display: flex;
     gap: 50px;
-    margin: 0;
+
     padding: 0;
 
   }
@@ -210,4 +210,26 @@ $obycej: #4a4a4a;
 }
 
 
+//----------footer----------//
+@mixin footer{
+  height: 70px;
+  .made{
+    position:relative;
+    top:40%;
+  }
+  background-color: $obycej;
+  p{
+    margin-top: 0;
+    text-align: center;
 
+    font-family: $font;
+    color: white;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}

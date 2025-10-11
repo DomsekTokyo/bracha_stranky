@@ -10,6 +10,9 @@
 
 }
 .navbar{
+  z-index: 1000;
+  border-bottom: 3px solid $obycej;
+  transition: 0.6s ease-in-out;
   display: flex;
   align-items: center;
 
@@ -17,9 +20,9 @@
   background-color: white;
   width: 100%;
   right: 0;
-  height: 80px;
+  height: 88px;
   ul{
-    margin-bottom: 30px;
+    margin-bottom: 38px;
     margin-right: 30px;
   }
 }
