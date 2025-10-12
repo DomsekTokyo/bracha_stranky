@@ -1,5 +1,6 @@
 @import "mixiny";
 .navbar {
+  height: 87px;
   ul {
     display: flex;
   }
@@ -13,4 +14,98 @@ main h1{
   color:black;
   font-size: 44px;
   margin-top: 50px;
+}
+@mixin chlivky{
+  width: 350px;
+  height: 300px;
+  background-color: #e6e6e6;
+  margin-top:30px;
+  h2{
+    margin-top:30px;
+    font-family:$font;
+    margin-bottom: 3px;
+    font-size:27px;
+  }
+  p{
+
+    font-family:$font;
+    font-size:20px;
+  }
+  img{
+    display:inline-block;
+    width: 90px;
+    height: 90px;
+    margin-top: 40px;
+    padding:0;
+    &:hover{
+      transform:  scale(1.2);
+
+      opacity: 1.2;
+
+      transition: transform 0.6s, opacity 0.6s;
+    }
+  }
+}
+.chlivky{
+
+
+
+  display: grid;
+  gap: 30px;
+  grid-template-columns:auto auto auto;
+ text-align: center;
+  align-items: center;
+  justify-content: center;
+  .jedenchlivek, .druhychlivek, .tretichlivek{
+    @include chlivky;
+  }
+}
+
+//----------formulář-------------//
+.formular{
+  height: 780px;
+  margin-top:30px;
+  display: grid;
+  grid-template-columns:auto auto ;
+  background-color:#e6e6e6;
+  .kontakty{
+    height: 500px;
+    margin-top: 15%;
+    margin-left: 15%;
+    width:75%;
+    h1{
+      color:white;
+    };
+    background-color: $obycej;
+  }
+  .kontakty form{
+
+    padding: 0 15%;
+
+    input{
+      font-family:$font;
+      width:200px;
+      height:35px;
+      margin: 10px;
+    }
+    textarea{
+      font-family:$font;
+      width: 435px;
+      height:10em;
+      margin: 10px;
+      resize: vertical;
+      overflow: auto;
+    }
+  }
+
+
+}
+.mapa img{
+  width: 300px;
+  height: 300px;
+}
+
+//--------------footer--------------//
+.konec{
+  margin-top:30px;
 }

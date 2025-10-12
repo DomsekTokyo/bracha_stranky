@@ -1,3 +1,6 @@
+.navbar {
+  height: 87px;
+}
 .navbar ul {
   display: flex;
 }
@@ -14,6 +17,89 @@ main h1 {
   color: black;
   font-size: 44px;
   margin-top: 50px;
+}
+
+.chlivky {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.chlivky .jedenchlivek, .chlivky .druhychlivek, .chlivky .tretichlivek {
+  width: 350px;
+  height: 300px;
+  background-color: #e6e6e6;
+  margin-top: 30px;
+}
+.chlivky .jedenchlivek h2, .chlivky .druhychlivek h2, .chlivky .tretichlivek h2 {
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 3px;
+  font-size: 27px;
+}
+.chlivky .jedenchlivek p, .chlivky .druhychlivek p, .chlivky .tretichlivek p {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+.chlivky .jedenchlivek img, .chlivky .druhychlivek img, .chlivky .tretichlivek img {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-top: 40px;
+  padding: 0;
+}
+.chlivky .jedenchlivek img:hover, .chlivky .druhychlivek img:hover, .chlivky .tretichlivek img:hover {
+  transform: scale(1.2);
+  opacity: 1.2;
+  transition: transform 0.6s, opacity 0.6s;
+}
+
+.formular {
+  height: 780px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #e6e6e6;
+}
+.formular .kontakty {
+  height: 500px;
+  margin-top: 15%;
+  margin-left: 15%;
+  width: 75%;
+}
+.formular .kontakty h1 {
+  color: white;
+}
+.formular .kontakty {
+  background-color: #4a4a4a;
+}
+.formular .kontakty form {
+  padding: 0 15%;
+}
+.formular .kontakty form input {
+  font-family: Arial, sans-serif;
+  width: 200px;
+  height: 35px;
+  margin: 10px;
+}
+.formular .kontakty form textarea {
+  font-family: Arial, sans-serif;
+  width: 435px;
+  height: 10em;
+  margin: 10px;
+  resize: vertical;
+  overflow: auto;
+}
+
+.mapa img {
+  width: 300px;
+  height: 300px;
+}
+
+.konec {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=kontakt.css.map */
