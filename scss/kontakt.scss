@@ -1,0 +1,16 @@
+@import "mixiny";
+.navbar {
+  ul {
+    display: flex;
+  }
+
+  ul li {
+    flex: 0 0 134px !important;
+  }
+}
+main h1{
+  @include nadpis;
+  color:black;
+  font-size: 44px;
+  margin-top: 50px;
+}
