@@ -57,14 +57,15 @@ main h1 {
 }
 
 .formular {
-  height: 780px;
-  margin-top: 30px;
+  min-height: 780px;
+  padding-bottom: 70px;
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1.5fr 1fr;
   background-color: #e6e6e6;
 }
 .formular .kontakty {
-  height: 500px;
+  min-height: 550px;
   margin-top: 15%;
   margin-left: 15%;
   width: 75%;
@@ -79,27 +80,34 @@ main h1 {
   padding: 0 15%;
 }
 .formular .kontakty form input {
+  font-size: 20px;
   font-family: Arial, sans-serif;
-  width: 200px;
-  height: 35px;
+  max-width: 44%;
+  height: 49px;
   margin: 10px;
 }
 .formular .kontakty form textarea {
+  font-size: 20px;
   font-family: Arial, sans-serif;
-  width: 435px;
+  max-width: 94.5%;
   height: 10em;
   margin: 10px;
   resize: vertical;
   overflow: auto;
 }
 
-.mapa img {
-  width: 300px;
-  height: 300px;
+.mapa iframe {
+  width: 509px;
+  height: 706px;
+  margin-top: 145px;
 }
 
 .konec {
-  margin-top: 30px;
+  margin-top: 60px;
+}
+
+.navbar {
+  height: 88px;
 }
 
 /*# sourceMappingURL=kontakt.css.map */
