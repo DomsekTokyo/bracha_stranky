@@ -1,3 +1,10 @@
-
+@media only screen and (max-width: 1015px) {
+  .kontakt {
+    display: none !important;
+  }
+  .navbar {
+    top: 0 !important;
+  }
+}
 
 /*# sourceMappingURL=responzivita.css.map */
