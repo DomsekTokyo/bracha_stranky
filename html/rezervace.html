@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../scss/kontakt.css">
   <link rel="stylesheet" href="../scss/styly.css">
   <link rel="stylesheet" href="../scss/rezervace.css">
+
 </head>
 <body>
 <header>
@@ -23,7 +24,7 @@
     <!----<img src="../logotokyo.png" class="logo" height="127" width="366"/>--->
     <ul>
       <li class="first"><a href="index.html" class="one">Úvod</a></li>
-      <li class = "second"><a href="#" class="two">Formulář</a></li>
+      <li class = "second"><a href="kontakt.html" class="two">Kontakt</a></li>
       <li ><a href="informace.html" class="three">Osobní</a></li>
       <li class="fourth"><a href="kontakt.html" class="four">Kontakt</a></li>
 
@@ -38,7 +39,33 @@
   </div>
 </header>
 <main>
+  <form>
+    <input type = "text" placeholder="jméno">
+    <input type = "text" placeholder="přijmení"><br>
+    <input type = "email" placeholder="Váš email">
+    <input type = "tel" placeholder="Telefon"><br>
+   <select name="" id=""><br>
+     <option value = "Vyberte službu o kterou máte zájem">Vyberte službu o kterou máte zájem</option>
+     <option value = "Masáž 30 minut">Masáž 30 minut</option>
+     <option value = "Masáž 45 minut">Masáž 45 minut</option>
+     <option value = "Masáž 60 minut">Masáž 60 minut</option>
+     <option value = "Masáž 90 minut">Masáž 90 minut</option>
 
+   </select><br>
+    <textarea rows="4" cols="50" placeholder="Vaše zpráva"></textarea><br>
+    <input type = "submit" value = "Odeslat">
+  </form>
 </main>
+<footer>
+  <div class="konec">
+    <div class="made">
+      <!----------napsat nazev webu sem domenu------->
+      <p>&copy Všechna práva vyhrazena Ezopik.cz | Made by  <a href="https://domsektokyo.github.io/" target="_blank">Dominik Mikulecký</a> </p>
+    </div>
+
+  </div>
+
+</footer>
+<script src="../js/navigaceposun.js"></script>
 </body>
 </html>

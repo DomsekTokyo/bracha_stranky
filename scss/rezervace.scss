@@ -1,3 +1,47 @@
+@import "mixiny";
 .navbar{
   height: 90px;
+}
+@mixin tlac {
+  font-size: 20px;
+  border-radius: 20px;
+  border: 5px solid $obycej;
+  padding: 10px;
+}
+form{
+
+  text-align: center;
+  @include kontainer;
+  margin-top:50px;
+  box-sizing: border-box;
+  input, select{
+    @include tlac;
+
+    width: 42%;
+    margin-top: 10px;
+  }
+  textarea{
+    @include tlac;
+     font-family: $font;
+    resize: vertical;
+    margin-top: 10px;
+    width: 87%;
+    height: 200px;
+  }
+  input[type="submit"]{
+    @include  button;
+    width: 200px;
+    font-size : 20px;
+
+    &:hover{
+      transform: scale(1);
+      background-color: $main;
+      color: white;
+
+    }
+
+  }
+  select{
+    width: 89%;
+  }
 }
