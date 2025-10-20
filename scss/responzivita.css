@@ -4,6 +4,32 @@
   }
   .navbar {
     top: 0 !important;
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .rezervacepole {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rezervacepole input, .rezervacepole textarea, .rezervacepole select {
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (max-width: 572px) {
+  .professional h1 {
+    font-size: 35px !important;
+  }
+  .lichybeznik {
+    clip-path: polygon(6% 0, 92% 0, 75% 100%, 6% 128%) !important;
+  }
+  .lichybeznik p {
+    margin-right: 33px !important;
   }
 }
 

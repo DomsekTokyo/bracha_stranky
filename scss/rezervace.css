@@ -28,7 +28,8 @@ form textarea {
   font-family: Arial, sans-serif;
   resize: vertical;
   margin-top: 10px;
-  width: 87%;
+  width: 90%;
+  max-width: 500px;
   height: 200px;
 }
 form input[type=submit] {

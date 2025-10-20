@@ -25,7 +25,8 @@ form{
      font-family: $font;
     resize: vertical;
     margin-top: 10px;
-    width: 87%;
+    width: 90%;
+    max-width: 500px;
     height: 200px;
   }
   input[type="submit"]{

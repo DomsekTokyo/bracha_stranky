@@ -1,4 +1,4 @@
-//rezervace
+//pro všechny navigace nebo spíše nadnavigace
 @media only screen and (max-width: 1015px){
 
   .kontakt{
@@ -6,5 +6,37 @@
   }
   .navbar{
     top: 0 !important;
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+//rezervace - polička
+@media only screen and (max-width: 860px){
+  .rezervacepole{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input, textarea, select {
+      width: 90%;
+      max-width: 500px;
+      box-sizing: border-box;
+
+    }
+  }
+
+}
+//lichobeznik
+@media only screen and (max-width: 572px){
+  .professional h1{
+    font-size: 35px !important;
+  }
+  .lichybeznik{
+
+    clip-path: polygon(6% 0, 92% 0, 75% 100%, 6% 128%) !important;
+    p{
+      margin-right: 33px !important;
+
+    }
   }
 }
