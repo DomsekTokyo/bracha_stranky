@@ -23,6 +23,9 @@
       box-sizing: border-box;
 
     }
+    select{
+      font-size: 10px;
+    }
   }
 
 }
@@ -38,5 +41,66 @@
       margin-right: 33px !important;
 
     }
+  }
+}
+
+///--------responzivita pro kontakt------------//
+//skrytí navigace
+@media only screen and (max-width: 673px){
+  .navbar{
+    display:none !important;
+  }
+
+}
+//pro mapu a kontakty
+@media only screen and (max-width: 1300px){
+  .formular{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .formular .kontakty{
+    margin-left: 0 !important;
+  }
+  .mapa iframe{
+    margin-top: 20px;
+  }
+}
+//nadpis v kontaktu
+@media only screen and (max-width: 730px){
+  .formular .kontakty{
+    h1{
+      font-size: 25px !important;
+    }
+  }
+}
+//input políča a mapa
+@media (max-width: 600px) {
+  .mapa iframe {
+    width: 100%;
+    height: 350px;
+    margin: 30px auto 0;
+  }
+  main h1{
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 410px){
+  .formular .kontakty h1{
+    font-size: 16px !important;
+
+
+  }
+  .formular .kontakty form input{
+    box-sizing: border-box;
+    padding: 0 6% 0 0 !important;
+  }
+}
+@media only screen and (max-width: 879px){
+  .chlivky{
+    grid-template-columns: auto;
+    width: 100%;
   }
 }

@@ -55,6 +55,7 @@ form input[type=submit]:hover {
 }
 form select {
   width: 89%;
+  font-family: Arial, sans-serif;
 }
 
 /*# sourceMappingURL=rezervace.css.map */

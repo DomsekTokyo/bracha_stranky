@@ -22,7 +22,9 @@ main h1 {
 .chlivky {
   display: grid;
   gap: 30px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -79,16 +81,18 @@ main h1 {
   padding: 0 15%;
 }
 .formular .kontakty form input {
+  width: 100%;
+  max-width: 100%;
   font-size: 20px;
   font-family: Arial, sans-serif;
-  max-width: 44%;
   height: 49px;
   margin: 10px;
 }
 .formular .kontakty form textarea {
   font-size: 20px;
   font-family: Arial, sans-serif;
-  max-width: 94.5%;
+  width: 100%;
+  max-width: 100%;
   height: 10em;
   margin: 10px;
   resize: vertical;
