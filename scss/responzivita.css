@@ -84,5 +84,26 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 1300px) {
+  .omne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .omne .grid1 img {
+    margin-top: 40px;
+    width: 70%;
+    height: auto;
+  }
+  .omne .grid2 {
+    margin-top: 40px;
+  }
+  .omne .grid2 h1::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /*# sourceMappingURL=responzivita.css.map */

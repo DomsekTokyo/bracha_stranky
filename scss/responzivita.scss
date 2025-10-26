@@ -104,3 +104,32 @@
     width: 100%;
   }
 }
+
+
+
+//-------------responzivita sekce o mně--------------//
+@media only screen and (max-width: 1300px) {
+  .omne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .grid1 img {
+      margin-top: 40px;
+      width: 70%;
+
+      height: auto;
+    }
+
+    .grid2 {
+      margin-top: 40px;
+      h1::after {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+

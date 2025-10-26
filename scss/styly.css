@@ -337,7 +337,7 @@ body {
   padding: 0 15%;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 600px 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .omne .grid1 img {
   width: 80%;
@@ -345,7 +345,7 @@ body {
   margin-top: 100px;
 }
 .omne .grid2 {
-  margin-top: 90px;
+  margin-top: 50px;
   font-family: Arial, sans-serif;
 }
 .omne .grid2 h1 {

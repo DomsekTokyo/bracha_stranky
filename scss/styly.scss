@@ -205,7 +205,7 @@ body{
 .omne{
   @include kontainer;
   display:grid;
-  grid-template-columns: 600px 1fr;
+  grid-template-columns:1fr 1fr;
   .grid1 img{
 
     width: 80%;
@@ -213,7 +213,7 @@ body{
     margin-top:100px;
   }
   .grid2{
-    margin-top:90px;
+    margin-top:50px;
     font-family: $font;
     h1{
       font-size: 55px;
