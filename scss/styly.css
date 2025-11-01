@@ -336,6 +336,7 @@ body {
   margin: 0 auto;
   padding: 0 15%;
   box-sizing: border-box;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }

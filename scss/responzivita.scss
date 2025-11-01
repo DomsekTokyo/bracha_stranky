@@ -118,7 +118,7 @@
 
     .grid1 img {
       margin-top: 40px;
-      width: 70%;
+      width: 100%;
 
       height: auto;
     }
@@ -173,5 +173,42 @@
     height: 340px;
   }
 }
+//-------------responzivita hlavní stránka--------------//
+@media only screen and (max-width: 700px){
+  .Uvod-sekce{
+    h1{
+      font-size: 35px !important;
+    }
+    p{
+
+      font-size: 25px !important;
+    }
+    .typermain{
+      display:block;
+    }
+    a{
+      font-size: 25px !important;
+      margin: 5px;
+    }
+  }
+}
+@media only screen and (max-width: 1267px) {
+  .barvicka {
+    height: 210px !important;
+  }
+  .rezervace {
+    a {
+      display: block !important;
+      position: static;
+      padding: 0 15%;
+    }
+
+  }
 
 
+}
+@media only screen and (max-width: 560px){
+  .barvicka {
+    height: 330px !important;
+  }
+}

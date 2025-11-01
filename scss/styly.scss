@@ -204,6 +204,7 @@ body{
 //-------------sekce o mně------------//
 .omne{
   @include kontainer;
+  margin: 50px auto;
   display:grid;
   grid-template-columns:1fr 1fr;
   .grid1 img{
