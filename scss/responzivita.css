@@ -105,5 +105,38 @@
     margin-right: auto;
   }
 }
+@media only screen and (max-width: 1245px) {
+  .barvicka {
+    height: 170px;
+  }
+  .kontaktpruh h1 {
+    width: 70%;
+    font-size: 25px !important;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .barvicka {
+    height: 250px;
+  }
+  .kontaktpruh a {
+    width: 30%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 200px auto 0 auto;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .kontaktpruh p {
+    width: 70%;
+  }
+  .kontaktpruh a {
+    margin: 294px 100px 0 0;
+  }
+  .barvicka {
+    height: 340px;
+  }
+}
 
 /*# sourceMappingURL=responzivita.css.map */
