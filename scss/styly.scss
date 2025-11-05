@@ -80,37 +80,6 @@ body{
   background-repeat: no-repeat;
 }
 
-.cross,
-.hamburger{
-  @include styl_ikona;
-  display:none;
-}
-
-
-
-@media only screen and (max-width: 660px){
-  .navbar ul{
-    display: none;
-  }
-  .hamburger{
-    display: flex;
-  }
-}
-.mobil{
-
-  @include mobil-nav;
-  max-height: 0;
-  opacity: 0;
-  transition:  max-height 0.6s ease-in-out, opacity 1s ease ,transform 1s ease;
-
-}
-.mobil.mobileopen {
-
-  max-height: 500px;
-  transform: translateY(0);
-  opacity: 1;
-  transition:  max-height 1s ease-in-out, opacity 1s ease ,transform 1s ease;
-}
 //----------logo--------------//
 .logo{
   @include logostyl;

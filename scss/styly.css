@@ -126,63 +126,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.cross,
-.hamburger {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  position: fixed;
-  width: 41px;
-  height: 37px;
-  right: 17px;
-  top: 7px;
-  display: none;
-}
-
-@media only screen and (max-width: 660px) {
-  .navbar ul {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
-}
-.mobil {
-  overflow: hidden;
-  max-height: 0;
-  background-color: white;
-  width: 100%;
-  top: 0;
-  position: fixed;
-}
-.mobil li {
-  margin-top: 15px;
-  background-color: #ffffff;
-  color: white;
-  border: 1px solid rgba(32, 2, 50, 0.82);
-  border-radius: 20px;
-  padding: 0 20px;
-  width: 90%;
-  max-width: 300px;
-  list-style-type: none;
-  text-align: center;
-}
-.mobil li a {
-  text-decoration: none;
-}
-.mobil {
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 0.6s ease-in-out, opacity 1s ease, transform 1s ease;
-}
-
-.mobil.mobileopen {
-  max-height: 500px;
-  transform: translateY(0);
-  opacity: 1;
-  transition: max-height 1s ease-in-out, opacity 1s ease, transform 1s ease;
-}
-
 .logo {
   width: 345px;
   height: 139px;

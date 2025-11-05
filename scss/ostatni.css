@@ -41,13 +41,13 @@
 .professional {
   height: 150px;
   background-color: #4a4a4a;
-  margin-top: 90px;
 }
 .professional h1 {
   color: white;
   padding-left: 5%;
   padding-top: 1%;
   font-size: 45px;
+  margin-top: 0;
   font-family: Arial, sans-serif;
 }
 .professional .lichybeznik {

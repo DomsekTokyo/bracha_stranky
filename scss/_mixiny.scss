@@ -239,3 +239,64 @@ $obycej: #4a4a4a;
     }
   }
 }
+
+//---------------mixina pro mobil ==== po otevření-------------------//
+@mixin mobileopen{
+  height: 300px;
+  inset: 0;
+  .cross{
+position: fixed;
+    @include ikonanav;
+  }
+  background-color: black;
+  ul{
+    display: inline-block;
+    width: 100%;
+
+    li{
+      margin-bottom: 37px;
+      margin-top: 10px;
+      list-style: none;
+      a{
+        font-family: $font;
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 45px ;
+
+
+      }
+      a::after{
+        content: "";
+
+
+        display: block;
+        width: 500px;
+        height: 5px;
+        bottom: -10px;
+        left: 0;
+        background-color: grey;
+
+      }
+    }
+  }
+
+}
+@mixin mobileclose{
+  .hamburger{
+    display: block;
+    @include ikonanav;
+  }
+  ul{
+    display: none;
+
+  }
+}
+@mixin ikonanav{
+  width: 70px;
+  height: 61px;
+  position: absolute;
+  right: 2%;
+  top: 10px;
+
+}
