@@ -1,10 +1,10 @@
 const button = document.querySelector('.hamburger');
 const menu = document.querySelector(".mobil")
 const cross = document.querySelector(".cross")
-const informace3 = document.querySelector('.second2');
 
 
-const huh = document.querySelector('.huh');
+
+const huh = document.querySelector('.huh')
 
 button.addEventListener('click', () => {
     menu.style.height = 400 + "px";
@@ -20,14 +20,11 @@ cross.addEventListener('click', () => {
     button.style.display = "block";
     cross.style.display = "none";
 })
-
-
-informace3.addEventListener('click', (e) => {
+huh.addEventListener('click', (e) => {
     e.preventDefault();
-    let y = document.querySelector(".formular").offsetTop;
+    let y = document.querySelector(".omne").offsetTop;
     window.scrollTo({
         top: y,
         behavior: 'smooth'
     })
 })
-

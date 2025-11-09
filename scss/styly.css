@@ -25,6 +25,13 @@ body {
 
 .navigacestoji {
   z-index: 1000;
+  background-color: transparent !important;
+  border: none !important;
+}
+.navigacestoji a {
+  color: white !important;
+}
+.navigacestoji {
   width: 100%;
   position: fixed;
   display: flex;
@@ -59,15 +66,16 @@ body {
 }
 .navigacestoji .second {
   width: 240px;
+  color: white;
 }
 .navigacestoji .first a {
-  color: #ff5900;
+  color: white;
 }
 .navigacestoji .one {
   display: none;
 }
 .navigacestoji .fourth {
-  background-color: #ff5900;
+  background-color: white;
   padding: 5px;
   margin-top: 45px;
 }

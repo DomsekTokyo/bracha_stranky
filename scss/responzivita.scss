@@ -222,10 +222,16 @@
 //--------------mobil-----------------//
 
 @media only screen and (max-width: 685px){
-
+  .hamburger,
+  .cross {
+    width: 70px !important;
+    height: auto !important;
+  }
   .mobil{
-    display:block !important;
+
     @include mobileclose;
+    display:block !important;
+
     .cross{
       display: none;
     }

@@ -32,19 +32,25 @@ body{
 }
 .navigacestoji{
   z-index: 1000;
+  background-color: transparent !important;
+  border: none !important;
+  a{
+    color: white !important;
+  }
   @include styl;
   //úprava textu v navigaci
   .second{
     width:240px;
+    color: white;
   }
   .first a{
-    color: $main;
+    color: white;
   }
   .one{
     display:none;
   }
   .fourth {
-    background-color: $main;
+    background-color: white;
     padding: 5px;
     margin-top: 45px;
 

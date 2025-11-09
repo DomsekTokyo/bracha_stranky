@@ -260,8 +260,10 @@
 }
 
 @media only screen and (max-width: 685px) {
-  .mobil {
-    display: block !important;
+  .hamburger,
+  .cross {
+    width: 70px !important;
+    height: auto !important;
   }
   .mobil .hamburger {
     display: block;
@@ -273,6 +275,9 @@
   }
   .mobil ul {
     display: none;
+  }
+  .mobil {
+    display: block !important;
   }
   .mobil .cross {
     display: none;
@@ -309,7 +314,7 @@
     position: relative;
     color: white;
     text-decoration: none;
-    font-size: 45px;
+    font-size: 35px;
   }
   .mobil.dej ul li a::after {
     content: "";

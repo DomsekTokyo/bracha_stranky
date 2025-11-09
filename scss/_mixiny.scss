@@ -262,7 +262,7 @@ position: fixed;
         position: relative;
         color: white;
         text-decoration: none;
-        font-size: 45px ;
+        font-size: 35px ;
 
 
       }
@@ -284,7 +284,7 @@ position: fixed;
 }
 @mixin mobileclose{
   .hamburger{
-    display: block;
+    display: block ;
     @include ikonanav;
   }
   ul{
