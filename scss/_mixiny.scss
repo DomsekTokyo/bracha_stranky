@@ -244,6 +244,7 @@ $obycej: #4a4a4a;
 @mixin mobileopen{
   height: 300px;
   inset: 0;
+  transition: 0.5s ease-in-out;
   .cross{
 position: fixed;
     @include ikonanav;
@@ -254,9 +255,11 @@ position: fixed;
     width: 100%;
 
     li{
+
       margin-bottom: 37px;
-      margin-top: 10px;
+      margin-top: 30px;
       list-style: none;
+
       a{
         font-family: $font;
         position: relative;
@@ -283,6 +286,7 @@ position: fixed;
 
 }
 @mixin mobileclose{
+  transition: 0.5s ease-in-out;
   .hamburger{
     display: block ;
     @include ikonanav;

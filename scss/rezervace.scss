@@ -30,6 +30,7 @@ form{
     height: 200px;
   }
   input[type="submit"]{
+
     @include  button;
     width: 200px;
     font-size : 20px;

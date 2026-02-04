@@ -129,10 +129,7 @@
   }
 }
 @media only screen and (max-width: 1245px){
-  .barvicka{
 
-    height: 170px;
-  }
   .kontaktpruh{
     h1{
       width: 70%;
@@ -142,9 +139,7 @@
   }
 }
 @media only screen and (max-width: 780px){
-  .barvicka{
-    height: 250px;
-  }
+
   .kontaktpruh a {
     width: 30%;
     display:flex !important;
@@ -189,9 +184,7 @@
   }
 }
 @media only screen and (max-width: 1267px) {
-  .barvicka {
-    height: 210px !important;
-  }
+
   .rezervace {
     a {
       display: block !important;
@@ -203,9 +196,16 @@
 
 
 }
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 780px){
   .barvicka {
-    height: 330px !important;
+    height: 204px ;
+    a{
+      margin-top: 169px;
+      right: 50%;
+      left: 15%;
+
+    }
+
   }
 }
 .mobil{
@@ -245,4 +245,69 @@
 
   }
 
+}
+
+@media only screen and (max-width: 595px) {
+  .barvicka {
+    height: auto !important;
+    padding: 30px 15px !important;
+    text-align: center;
+  }
+
+
+  .barvicka .kontaktpruh,
+  .barvicka h2,
+  .barvicka p,
+  .barvicka a {
+    position: static !important;
+    display: block !important;
+    margin: 15px auto !important;
+    float: none !important;
+    width: auto;
+  }
+  .kontaktpruh h1{
+    width: auto;
+  }
+
+  .barvicka a {
+    width: fit-content !important;
+    padding: 10px 20px;
+    display: inline-block !important;
+  }
+}
+@media only screen and (max-width: 1270px) {
+
+  .barvicka.oprava {
+    height: auto !important;
+    padding: 40px 20px !important;
+    display: block !important;
+  }
+
+
+  .barvicka.oprava .rezervace {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    gap: 15px !important;
+  }
+
+
+  .barvicka.oprava h1 {
+    margin: 0 0 10px 0 !important;
+  }
+
+  .barvicka.oprava p {
+    margin: 0 0 20px 0 !important;
+  }
+
+
+  .barvicka.oprava a {
+    position: static !important;
+    display: inline-block !important;
+    margin: 0 auto !important;
+    width: fit-content !important;
+  }
 }
