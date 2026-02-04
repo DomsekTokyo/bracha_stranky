@@ -240,67 +240,94 @@ $obycej: #4a4a4a;
   }
 }
 
-//---------------mixina pro mobil ==== po otevření-------------------//
-@mixin mobileopen{
-  height: 300px;
-  inset: 0;
-  transition: 0.5s ease-in-out;
-  .cross{
-position: fixed;
-    @include ikonanav;
-  }
-  background-color: black;
-  ul{
-    display: inline-block;
-    width: 100%;
+//-------------- MIXINY PRO MOBILNÍ MENU --------------//
 
-    li{
-
-      margin-bottom: 37px;
-      margin-top: 30px;
-      list-style: none;
-
-      a{
-        font-family: $font;
-        position: relative;
-        color: white;
-        text-decoration: none;
-        font-size: 35px ;
-
-
-      }
-      a::after{
-        content: "";
-
-
-        display: block;
-        width: 500px;
-        height: 5px;
-        bottom: -10px;
-        left: 0;
-        background-color: grey;
-
-      }
-    }
-  }
-
-}
-@mixin mobileclose{
-  transition: 0.5s ease-in-out;
-  .hamburger{
-    display: block ;
-    @include ikonanav;
-  }
-  ul{
-    display: none;
-
-  }
-}
-@mixin ikonanav{
+@mixin ikonanav {
   width: 70px;
   height: 61px;
   position: absolute;
   right: 2%;
   top: 10px;
-
 }
+
+@mixin mobileopen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: black;
+
+  // TAHAČ PLYNULOSTI:
+  height: 347px;
+  opacity: 1;
+  overflow: hidden;
+  transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+  .cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    @include ikonanav;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0 0 0;
+    margin: 0;
+
+    // !!! TADY JE TA OPRAVA !!!
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    li {
+      margin-bottom: 40px;
+      list-style: none;
+      width: 100%;
+      text-align: center;
+
+      a {
+        font-family: $font;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 4px;
+          background-color: grey;
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@mixin mobileclose {
+  height: 85px; // Tohle nech, jestli ti to takhle vyhovuje
+  opacity: 1;
+  overflow: hidden;
+  transition: height 0.6s ease-in-out, opacity 0.3s;
+
+  .hamburger {
+    display: block;
+    @include ikonanav;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden; // Tady to schováme...
+    opacity: 0;         // ...a zprůhledníme
+  }
+}
+
