@@ -15,7 +15,7 @@ form {
 form input, form select {
   font-size: 20px;
   border-radius: 20px;
-  border: 5px solid #4a4a4a;
+  border: 5px solid #777777;
   padding: 10px;
   width: 42%;
   margin-top: 10px;
@@ -23,7 +23,7 @@ form input, form select {
 form textarea {
   font-size: 20px;
   border-radius: 20px;
-  border: 5px solid #4a4a4a;
+  border: 5px solid #777777;
   padding: 10px;
   font-family: Arial, sans-serif;
   resize: vertical;

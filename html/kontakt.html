@@ -78,21 +78,31 @@
   </div>
 
 
-  <div class="formular">
-    <div class="kontakty">
-      <h1>KONTAKTNÍ FORMULÁŘ</h1><br>
-      <form>
-        <input type="text" placeholder="Jméno a přijmení">
-        <input type = "email" placeholder="Email"><br>
-        <input type = "text" placeholder="Telefon">
-        <input type = "text" placeholder="Předmět"><br>
-        <textarea rows="4" cols="50" placeholder="Vaše zpráva"></textarea><br>
-      </form>
+    <div class="formular">
+        <div class="kontakty">
+            <h1>KONTAKTNÍ FORMULÁŘ</h1><br>
+
+            <form action="https://formspree.io/f/xkovwvlp" method="POST">
+                <input type="text" name="jmeno" placeholder="Jméno a příjmení" required>
+
+                <input type="email" name="email" placeholder="Email" required><br>
+
+                <input type="text" name="telefon" placeholder="Telefon">
+
+                <input type="text" name="predmet" placeholder="Předmět"><br>
+
+                <textarea name="zprava" rows="4" cols="50" placeholder="Vaše zpráva" required></textarea><br>
+
+                <button type="submit" class="odeslat-btn">ODESLAT ZPRÁVU</button>
+            </form>
+
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2412.5522299764248!2d16.44032377966301!3d49.90880332695361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470df2325168e7c3%3A0xb4317838f96aaf8d!2zRHIuIEUuIEJlbmXFoWUgNjQ2LCA1NjAgMDIgxIxlc2vDoSBUxZllYm92w6EgMg!5e0!3m2!1scs!2scz!4v1760373046156!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
-    <div class="mapa">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2412.5522299764248!2d16.44032377966301!3d49.90880332695361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470df2325168e7c3%3A0xb4317838f96aaf8d!2zRHIuIEUuIEJlbmXFoWUgNjQ2LCA1NjAgMDIgxIxlc2vDoSBUxZllYm92w6EgMg!5e0!3m2!1scs!2scz!4v1760373046156!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    </div>
+
+
 </main>
 <footer>
   <div class="konec">

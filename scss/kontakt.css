@@ -61,51 +61,61 @@ main h1 {
 }
 
 .formular {
-  min-height: 780px;
-  padding-bottom: 70px;
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
   background-color: #e6e6e6;
+  margin-top: 50px;
+  padding: 80px 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .formular .kontakty {
-  min-height: 550px;
-  margin-top: 15%;
-  margin-left: 15%;
-  width: 75%;
+  width: 100%;
+  background-color: #777777;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
 }
 .formular .kontakty h1 {
   color: white;
-}
-.formular .kontakty {
-  background-color: #4a4a4a;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0;
 }
 .formular .kontakty form {
-  padding: 0 15%;
+  padding: 0 12%;
 }
-.formular .kontakty form input {
+.formular .kontakty form input, .formular .kontakty form textarea {
   width: 100%;
-  max-width: 100%;
-  font-size: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
   font-family: Arial, sans-serif;
-  height: 49px;
-  margin: 10px;
+  margin: 12px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
 }
 .formular .kontakty form textarea {
-  font-size: 20px;
-  font-family: Arial, sans-serif;
-  width: 100%;
-  max-width: 100%;
-  height: 10em;
-  margin: 10px;
-  resize: vertical;
-  overflow: auto;
+  height: 180px;
 }
-
-.mapa iframe {
-  width: 509px;
-  height: 706px;
-  margin-top: 145px;
+.formular .mapa {
+  width: 100%;
+}
+.formular .mapa iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 600px;
+  border: none;
+  border-radius: 10px;
+  display: block;
 }
 
 .konec {
@@ -114,6 +124,23 @@ main h1 {
 
 .navbar {
   height: 88px;
+}
+
+.odeslat-btn {
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.odeslat-btn:hover {
+  background-color: #777777;
+  color: white;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=kontakt.css.map */

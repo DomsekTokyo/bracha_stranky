@@ -69,63 +69,94 @@ main h1{
   }
 }
 
-//----------formulář-------------//
-.formular{
-  min-height: 780px;
-  padding-bottom: 70px;
-  margin-top:20px;
+//---------- FINÁLNÍ SYMETRICKÝ FORMULÁŘ -------------//
+.formular {
+  background-color: #e6e6e6;
+  margin-top: 50px;
+  padding: 80px 10%;
+
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
-  grid-template-columns:1.5fr 1fr;
-  background-color:#e6e6e6;
-  .kontakty{
-    min-height: 550px;
-    margin-top: 15%;
-    margin-left: 15%;
-    width:75%;
-    h1{
-      color:white;
-    };
+  .kontakty {
+    width: 100%;
     background-color: $obycej;
-  }
-  .kontakty form{
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
 
-    padding: 0 15%;
-
-    input{
-      width: 100%;
-      max-width: 100%;
-      font-size: 20px;
-      font-family:$font;
-
-      height: 49px;
-      margin: 10px;
+    h1 {
+      color: white;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+      margin-top: 0;
     }
-    textarea{
-      font-size: 20px;
-      font-family:$font;
-      width: 100%;
-      max-width: 100%;
-      height:10em;
-      margin: 10px;
-      resize: vertical;
-      overflow: auto;
+
+    form {
+      padding: 0 12%;
+
+      input, textarea {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 18px;
+        font-family: $font;
+        margin: 12px 0;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        height: 50px;
+      }
+
+      textarea {
+        height: 180px;
+      }
     }
   }
 
+  .mapa {
+    width: 100%;
 
+    iframe {
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 600px;
+      border: none;
+      border-radius: 10px;
+      display: block;
+    }
+  }
 }
-.mapa iframe{
-  width: 509px;
-  height: 706px;
-  margin-top: 145px;
-
-}
-
 //--------------footer--------------//
 .konec{
   margin-top:60px;
 }
 .navbar{
   height: 88px;
+}
+
+////tlačitko
+.odeslat-btn{
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  font-size: 16px;
+  &:hover{
+    background-color: $obycej;
+    color: white;
+    transition: .5s;
+  }
 }
